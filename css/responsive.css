@@ -1,0 +1,57 @@
+@media (max-width: 600px) {
+	.main-nav-list {
+		display: none;
+	}
+	.search-box,
+	.search-box-btn {
+		display: none;
+	}
+	.logo {
+		height: 40px;
+		width: 80px;
+	}
+	.nav-login-btn {
+		font-size: 12px;
+		border: 1px solid rgb(142, 142, 133);
+		border-radius: 4dvb;
+		padding: 0.6em 0.7em;
+	}
+	.nav-sign-up-btn {
+		font-size: 12px;
+		border: 1px solid rgb(142, 142, 133);
+		padding: 0.6em 0.7em;
+		border-radius: 4dvb;
+	}
+	.all-products {
+		grid-template-columns: 1fr 1fr;
+	}
+	.product {
+		width: 120px;
+	}
+	.product-name {
+		font-size: 14px;
+	}
+	.product .company {
+		color: #666;
+		margin-bottom: 20px;
+	}
+	.product .price {
+		font-weight: bold;
+		color: #f00;
+		margin-top: -20px;
+		font-size: 14px;
+	}
+	.product .description {
+		margin-top: -14px;
+		font-size: 10px;
+	}
+	.product .number {
+		margin-top: -10px;
+		font-size: 12px;
+	}
+	.product .buy-button {
+		font-size: 12px;
+		padding: 4px;
+		width: 80px;
+	}
+}

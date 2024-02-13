@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/responsive.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+		/>
+
+		<title>Haqmal store</title>
+	</head>
+	<body>
+		<div class="first-view container-fluid">
+			<div class="header p-2">
+				<header class="d-flex justify-content-between" id="mainHeader">
+					<a href="#">
+						<img
+							class="logo mt-2"
+							alt="Haqmal Store logo"
+							src="icons/Big-Project-logo.png"
+							width="180px"
+						/>
+					</a>
+					<div class="input-group d-none mt-2" style="width: 700px">
+						<input
+							type="search"
+							class="form-control shadow border-2 border-success"
+							placeholder="What are you looking for..."
+							aria-label="Recipient's username"
+							aria-describedby="button-addon2"
+							style="font-size: 14px"
+						/>
+						<button
+							class="btn btn-sm btn-success ps-3 pe-3"
+							type="button"
+							id="button-addon2"
+						>
+							Search
+						</button>
+					</div>
+					<div class="mt-2">
+						<a
+							href="#"
+							class="me-5 text-decoration-none fw-bold text-light"
+							style="font-size: 16px"
+						>
+							<span class="shouldChange">
+								Ship to:
+								<img src="img/countries/ae.png" alt="UAE" style="width: 30px" />
+								AE</span
+							>
+						</a>
+						<span
+							href="#"
+							class="me-5 text-decoration-none fw-bold text-light"
+							style="font-size: 16px"
+						>
+							<span class="shouldChange pb-3" id="trigger"
+								>English-USD
+								<img
+									class="globe-icon"
+									src="icons/Globe.png"
+									alt="globe-icon"
+									style="width: 55px; margin: -4px 0px 0px -15px; padding: 0"
+							/></span>
+							<div id="popup">
+								<div class="d-flex flex-column p-2">
+									<h5>Set language and currency</h5>
+									<p class="opacity-75">
+										Select your preferred language and currency.<br />You can
+										update the setting at any time.
+									</p>
+									<div>
+										<label for="languageOptions" class="opacity-75 mb-2"
+											>Language</label
+										>
+										<select
+											class="form-select"
+											aria-label="Default select example"
+											id="languageOptions"
+											style="font-size: 12px"
+										>
+											<option selected>Open this select menu</option>
+											<option value="1">One</option>
+											<option value="2">Two</option>
+											<option value="3">Three</option>
+										</select>
+
+										<!-- <label for="currencyOptions" class="opacity-75 mb-2 mt-4"
+											>Currency</label
+										>
+										<select
+											class="form-select"
+											aria-label="Default select example"
+											id="languageOptions"
+											style="font-size: 12px"
+										>
+											<option selected>Open this select menu</option>
+											<option value="1">One</option>
+											<option value="2">Two</option>
+											<option value="3">Three</option>
+										</select> -->
+									</div>
+								</div>
+							</div>
+						</span>
+						<a href="html/login.html">
+							<button
+								type="button"
+								class="login-button btn btn-sm btn-outline-light pe-2 ps-2"
+							>
+								Login
+							</button></a
+						>
+						<a href="html/signup.html"
+							><button class="btn btn-sm btn-success me-3 ms-2">
+								Sign up
+							</button></a
+						>
+					</div>
+				</header>
+				<div class="d-flex justify-content-between mt-2">
+					<nav class="main-nav">
+						<ul class="main-nav-list">
+							<li>
+								<a
+									class="btn btn-sm text-light"
+									data-bs-toggle="offcanvas"
+									href="#offcanvasExample"
+									role="button"
+									aria-controls="offcanvasExample"
+								>
+									Categories
+								</a>
+							</li>
+							<li>
+								<a
+									class="btn btn-sm text-light"
+									data-bs-toggle="offcanvas"
+									href="#offcanvasExample"
+									role="button"
+									aria-controls="offcanvasExample"
+									>Sell on Haqmal.com</a
+								>
+							</li>
+							<li>
+								<a class="main-nav-link" href="">Testimonials</a>
+							</li>
+							<li>
+								<a class="main-nav-link" href="">Pricing</a>
+							</li>
+						</ul>
+					</nav>
+					<nav class="d-flex justify-content-center pe-4">
+						<ul class="main-nav-list">
+							<li>
+								<a class="main-nav-link" href="">Buyer Central</a>
+							</li>
+							<li>
+								<a class="main-nav-link" href="">Help Center</a>
+							</li>
+							<li>
+								<a class="main-nav-link" href="">Get th App</a>
+							</li>
+							<li>
+								<a class="main-nav-link" href="">Become a supplier</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+
+			<div class="page-intro">
+				<div class="mb-3 w-25" style="cursor: pointer">
+					<img
+						src="icons/MediaPlayerAppList.scale-200_contrast-black.png"
+						alt="playing"
+						width="25px"
+					/>
+					<span class="text-light fw-bolder fs-6"
+						>Learn about
+						<span style="font-size: 18px; color: rgb(41, 207, 80)"
+							>Haqmal.com</span
+						></span
+					>
+				</div>
+				<div class="page-title">
+					<h1 class="h1 w-50 mb-5 text-light fw-bolder">
+						The leading B2B ecommerce platform for global trade
+					</h1>
+				</div>
+				<div class="input-group w-75">
+					<input
+						type="search"
+						class="form-control"
+						placeholder="What are you looking for..."
+						aria-label="Recipient's username"
+						aria-describedby="button-addon2"
+						style="font-size: 16px"
+					/>
+					<button class="btn btn-sm btn-success" type="button">Search</button>
+				</div>
+			</div>
+		</div>
+		<div class="everything">
+			<article
+				class="offcanvas offcanvas-start"
+				tabindex="-1"
+				id="offcanvasExample"
+				aria-labelledby="offcanvasExampleLabel"
+			>
+				<button
+					type="button"
+					class="btn-close text-reset position-absolute end-0 me-3"
+					data-bs-dismiss="offcanvas"
+					aria-label="Close"
+				></button>
+				<div class="categories">
+					<p>
+						Categories
+						<span id="toggleCategories" class="dropdown-icon">▼</span>
+					</p>
+					<ul class="category-list">
+						<li><a href="">Other Healthcare Supply</a></li>
+						<li><a href="">Earbud & In-Ear…</a></li>
+						<li><a href="">Earphones & Headphones</a></li>
+						<li><a href="">Used Mobile Phones</a></li>
+						<li><a href="">Over-Ear Headphones</a></li>
+						<li><a href="">Earphones</a></li>
+						<li><a href="">Gaming On-Ear & Over-Ear…</a></li>
+					</ul>
+				</div>
+				<hr />
+				<div class="supplier-types"><p>Supplier types</p></div>
+				<div class="min-order"><p>Min. order</p></div>
+				<div class="supplier-country">
+					<p>Supplier country/region</p>
+					<span id="toggleSupplierCountry" class="dropdown-icon">▼</span>
+					<input
+						type="text"
+						placeholder="search country"
+						class="country-input"
+					/>
+				</div>
+				<p>
+					New Products Muscle Joint Pain Relief Patch Perforated Adhesive Tiger
+					Capsicum…
+				</p>
+				<p>$1.24-$2.16</p>
+				<p>Henan Kangdi Medical Devices C…</p>
+				<p>
+					New Products Muscle Joint Pain Relief Patch Perforated Adhesive Tiger
+					Capsicum…
+				</p>
+				<p>$1.24-$2.16</p>
+				<p>Henan Kangdi Medical Devices C…</p>
+				<p>
+					New Products Muscle Joint Pain Relief Patch Perforated Adhesive Tiger
+					Capsicum…
+				</p>
+				<p>$1.24-$2.16</p>
+				<p>Henan Kangdi Medical Devices C…</p>
+				<p>
+					New Products Muscle Joint Pain Relief Patch Perforated Adhesive Tiger
+					Capsicum…
+				</p>
+				<p>$1.24-$2.16</p>
+				<p>Henan Kangdi Medical Devices C…</p>
+				<p>
+					New Products Muscle Joint Pain Relief Patch Perforated Adhesive Tiger
+					Capsicum…
+				</p>
+				<p>$1.24-$2.16</p>
+				<p>Henan Kangdi Medical Devices C…</p>
+				<hr />
+			</article>
+		</div>
+		<div class="bg-success">
+			<div class="container d-flex column-gap-5 mt-5 text-light fw-bolder">
+				<h2 style="font-size: 40px; width: 50%; margin: 100px 100px">
+					Explore millions of offerings tailored to your business needs
+				</h2>
+				<div
+					class="statestics d-flex flex-wrap w-75 row-gap-2 column-gap-2"
+					style="margin: 50px 40px"
+				>
+					<div class="card border rounded-2 shadow-lg" style="width: 10rem">
+						<div class="card-body">
+							<h5 class="card-title fs-4 text-success">200M+</h5>
+							<span class="fw-light" style="font-size: 16px">products</span>
+						</div>
+					</div>
+					<div class="card border rounded-2 shadow-lg" style="width: 10rem">
+						<div class="card-body">
+							<h5 class="card-title fs-4 text-success">200K+</h5>
+							<span class="fw-light" style="font-size: 16px">suppliers</span>
+						</div>
+					</div>
+					<div class="card border rounded-2 shadow-lg" style="width: 10rem">
+						<div class="card-body">
+							<h5 class="card-title fs-4 text-success">5990</h5>
+							<span class="fw-light" style="font-size: 16px"
+								>products categories</span
+							>
+						</div>
+					</div>
+					<div class="card border rounded-2 shadow-lg" style="width: 10rem">
+						<div class="card-body">
+							<h5 class="card-title fs-4 text-success">200+</h5>
+							<span class="fw-light" style="font-size: 16px"
+								>countries and regions</span
+							>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- <div class="container w-75 h-50">
+				<div
+					id="carouselExampleControls"
+					class="carousel slide bg-success rounded-2 mt-5"
+					data-bs-ride="carousel"
+				>
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<div
+								class="container d-flex column-gap-3"
+								style="margin: 50px 108px"
+							>
+								<div class="card border rounded-1 shadow" style="width: 6rem">
+									<div class="card-body p-2">
+										<img
+											src="icons/home_FILL0_wght400_GRAD0_opsz24.png"
+											alt=""
+										/>
+										<p class="pt-1" style="font-size: 12px">Personal Care</p>
+									</div>
+								</div>
+								<div class="card border rounded-1 shadow" style="width: 6rem">
+									<div class="card-body p-2">
+										<img
+											src="icons/home_FILL0_wght400_GRAD0_opsz24.png"
+											alt=""
+										/>
+										<p class="pt-1" style="font-size: 12px">Personal Care</p>
+									</div>
+								</div>
+								<div class="card border rounded-1 shadow" style="width: 6rem">
+									<div class="card-body p-2">
+										<img
+											src="icons/home_FILL0_wght400_GRAD0_opsz24.png"
+											alt=""
+										/>
+										<p class="pt-1" style="font-size: 12px">Personal Care</p>
+									</div>
+								</div>
+								<div class="card border rounded-1 shadow" style="width: 6rem">
+									<div class="card-body p-2">
+										<img
+											src="icons/home_FILL0_wght400_GRAD0_opsz24.png"
+											alt=""
+										/>
+										<p class="pt-1" style="font-size: 12px">Personal Care</p>
+									</div>
+								</div>
+								<div class="card border rounded-1 shadow" style="width: 6rem">
+									<div class="card-body p-2">
+										<img
+											src="icons/home_FILL0_wght400_GRAD0_opsz24.png"
+											alt=""
+										/>
+										<p class="pt-1" style="font-size: 12px">Personal Care</p>
+									</div>
+								</div>
+								<div class="card border rounded-1 shadow" style="width: 6rem">
+									<div class="card-body p-2">
+										<img
+											src="icons/home_FILL0_wght400_GRAD0_opsz24.png"
+											alt=""
+										/>
+										<p class="pt-1" style="font-size: 12px">Personal Care</p>
+									</div>
+								</div>
+								<div class="card border rounded-1 shadow" style="width: 6rem">
+									<div class="card-body p-2">
+										<img
+											src="icons/home_FILL0_wght400_GRAD0_opsz24.png"
+											alt=""
+										/>
+										<p class="pt-1" style="font-size: 12px">Personal Care</p>
+									</div>
+								</div>
+								<div class="card border rounded-1 shadow" style="width: 6rem">
+									<div class="card-body p-2">
+										<img
+											src="icons/home_FILL0_wght400_GRAD0_opsz24.png"
+											alt=""
+										/>
+										<p class="pt-1" style="font-size: 12px">Personal Care</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<div
+								class="container d-flex column-gap-3"
+								style="margin: 50px 108px"
+							>
+								<div class="card border rounded-1 shadow" style="width: 6rem">
+									<div class="card-body p-2">
+										<img
+											src="icons/home_FILL0_wght400_GRAD0_opsz24.png"
+											alt=""
+										/>
+										<p class="pt-1" style="font-size: 12px">Personal Care</p>
+									</div>
+								</div>
+								<div class="card border rounded-1 shadow" style="width: 6rem">
+									<div class="card-body p-2">
+										<img
+											src="icons/home_FILL0_wght400_GRAD0_opsz24.png"
+											alt=""
+										/>
+										<p class="pt-1" style="font-size: 12px">Personal Care</p>
+									</div>
+								</div>
+								<div class="card border rounded-1 shadow" style="width: 6rem">
+									<div class="card-body p-2">
+										<img
+											src="icons/home_FILL0_wght400_GRAD0_opsz24.png"
+											alt=""
+										/>
+										<p class="pt-1" style="font-size: 12px">Personal Care</p>
+									</div>
+								</div>
+								<div class="card border rounded-1 shadow" style="width: 6rem">
+									<div class="card-body p-2">
+										<img
+											src="icons/home_FILL0_wght400_GRAD0_opsz24.png"
+											alt=""
+										/>
+										<p class="pt-1" style="font-size: 12px">Personal Care</p>
+									</div>
+								</div>
+								<div class="card border rounded-1 shadow" style="width: 6rem">
+									<div class="card-body p-2">
+										<img
+											src="icons/home_FILL0_wght400_GRAD0_opsz24.png"
+											alt=""
+										/>
+										<p class="pt-1" style="font-size: 12px">Personal Care</p>
+									</div>
+								</div>
+								<div class="card border rounded-1 shadow" style="width: 6rem">
+									<div class="card-body p-2">
+										<img
+											src="icons/home_FILL0_wght400_GRAD0_opsz24.png"
+											alt=""
+										/>
+										<p class="pt-1" style="font-size: 12px">Personal Care</p>
+									</div>
+								</div>
+								<div class="card border rounded-1 shadow" style="width: 6rem">
+									<div class="card-body p-2">
+										<img
+											src="icons/home_FILL0_wght400_GRAD0_opsz24.png"
+											alt=""
+										/>
+										<p class="pt-1" style="font-size: 12px">Personal Care</p>
+									</div>
+								</div>
+								<div class="card border rounded-1 shadow" style="width: 6rem">
+									<div class="card-body p-2">
+										<img
+											src="icons/home_FILL0_wght400_GRAD0_opsz24.png"
+											alt=""
+										/>
+										<p class="pt-1" style="font-size: 12px">Personal Care</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<div
+								class="container d-flex column-gap-3"
+								style="margin: 50px 108px"
+							>
+								<div class="card border rounded-1 shadow" style="width: 6rem">
+									<div class="card-body p-2">
+										<img
+											src="icons/home_FILL0_wght400_GRAD0_opsz24.png"
+											alt=""
+										/>
+										<p class="pt-1" style="font-size: 12px">Personal Care</p>
+									</div>
+								</div>
+								<div class="card border rounded-1 shadow" style="width: 6rem">
+									<div class="card-body p-2">
+										<img
+											src="icons/home_FILL0_wght400_GRAD0_opsz24.png"
+											alt=""
+										/>
+										<p class="pt-1" style="font-size: 12px">Personal Care</p>
+									</div>
+								</div>
+								<div class="card border rounded-1 shadow" style="width: 6rem">
+									<div class="card-body p-2">
+										<img
+											src="icons/home_FILL0_wght400_GRAD0_opsz24.png"
+											alt=""
+										/>
+										<p class="pt-1" style="font-size: 12px">Personal Care</p>
+									</div>
+								</div>
+								<div class="card border rounded-1 shadow" style="width: 6rem">
+									<div class="card-body p-2">
+										<img
+											src="icons/home_FILL0_wght400_GRAD0_opsz24.png"
+											alt=""
+										/>
+										<p class="pt-1" style="font-size: 12px">Personal Care</p>
+									</div>
+								</div>
+								<div class="card border rounded-1 shadow" style="width: 6rem">
+									<div class="card-body p-2">
+										<img
+											src="icons/home_FILL0_wght400_GRAD0_opsz24.png"
+											alt=""
+										/>
+										<p class="pt-1" style="font-size: 12px">Personal Care</p>
+									</div>
+								</div>
+								<div class="card border rounded-1 shadow" style="width: 6rem">
+									<div class="card-body p-2">
+										<img
+											src="icons/home_FILL0_wght400_GRAD0_opsz24.png"
+											alt=""
+										/>
+										<p class="pt-1" style="font-size: 12px">Personal Care</p>
+									</div>
+								</div>
+								<div class="card border rounded-1 shadow" style="width: 6rem">
+									<div class="card-body p-2">
+										<img
+											src="icons/home_FILL0_wght400_GRAD0_opsz24.png"
+											alt=""
+										/>
+										<p class="pt-1" style="font-size: 12px">Personal Care</p>
+									</div>
+								</div>
+								<div class="card border rounded-1 shadow" style="width: 6rem">
+									<div class="card-body p-2">
+										<img
+											src="icons/home_FILL0_wght400_GRAD0_opsz24.png"
+											alt=""
+										/>
+										<p class="pt-1" style="font-size: 12px">Personal Care</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<button
+						class="carousel-control-prev"
+						type="button"
+						data-bs-target="#carouselExampleControls"
+						data-bs-slide="prev"
+					>
+						<span
+							class="carousel-control-prev-icon bg-success rounded-circle"
+							aria-hidden="true"
+						></span>
+						<span class="visually-hidden">Previous</span>
+					</button>
+					<button
+						class="carousel-control-next"
+						type="button"
+						data-bs-target="#carouselExampleControls"
+						data-bs-slide="next"
+					>
+						<span
+							class="carousel-control-next-icon bg-success rounded-circle"
+							aria-hidden="true"
+						></span>
+						<span class="visually-hidden">Next</span>
+					</button>
+				</div>
+			</div> -->
+		</div>
+		<div class="container">
+			<div
+				id="carouselExampleIndicators"
+				class="carousel slide pt-0 pb-0 mt-5 shadow"
+				data-bs-ride="carousel"
+			>
+				<div class="carousel-indicators">
+					<button
+						type="button"
+						data-bs-target="#carouselExampleIndicators"
+						data-bs-slide-to="0"
+						class="active"
+						aria-current="true"
+						aria-label="Slide 1"
+					></button>
+					<button
+						type="button"
+						data-bs-target="#carouselExampleIndicators"
+						data-bs-slide-to="1"
+						aria-label="Slide 2"
+					></button>
+					<button
+						type="button"
+						data-bs-target="#carouselExampleIndicators"
+						data-bs-slide-to="2"
+						aria-label="Slide 3"
+					></button>
+				</div>
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<div
+							class="container d-flex bg-success justify-content-center rounded-2"
+							style="padding: 80px 170px; margin: 0px auto"
+						>
+							<div class="d-flex column-gap-3">
+								<img
+									src="img/ABBari.PNG"
+									alt="AB Osmani picture"
+									width="200px"
+									class="rounded-circle pe-3 pb-3"
+								/>
+								<div class="d-flex flex-column justify-content-center">
+									<p class="fs-5 text-light">Eng. Abdul Bari Osmani</p>
+									<p class="opacity-75 text-light">
+										Founder of AfghanElectronics
+									</p>
+								</div>
+							</div>
+							<div class="container d-flex justify-content-center w-50 ps-5">
+								<p class="text-light fw-bold pt-4">
+									"Once I discovered Haqmal.com, I was amazed at how many
+									options I had with suppliers from all over the world."
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div
+							class="container d-flex bg-success justify-content-center rounded-2"
+							style="padding: 80px 170px; margin: 0px auto"
+						>
+							<div class="d-flex column-gap-3">
+								<img
+									src="img/aimal.jpg"
+									alt="AB Osmani picture"
+									width="200px"
+									class="rounded-circle pe-3 pb-3"
+								/>
+								<div class="d-flex flex-column justify-content-center">
+									<p class="fs-5 text-light">Mr. Aimal Haqmal</p>
+									<p class="opacity-75 text-light">
+										Founder of Haqmal Defenders
+									</p>
+								</div>
+							</div>
+							<div class="container d-flex justify-content-center w-50 ps-5">
+								<p class="text-light fw-bold pt-4">
+									"Once I discovered Haqmal.com, I was amazed at how many
+									options I had with suppliers from all over the world."
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div
+							class="container d-flex bg-success justify-content-center rounded-2"
+							style="padding: 80px 170px; margin: 0px auto"
+						>
+							<div class="d-flex column-gap-3">
+								<img
+									src="img/haqmal.jpg"
+									alt="AB Osmani picture"
+									width="200px"
+									class="rounded-circle pe-3 pb-1"
+								/>
+								<div class="d-flex flex-column justify-content-center">
+									<p class="fs-5 text-light">Eng. Haqmal Noori</p>
+									<p class="opacity-75 text-light">
+										Founder of AfghanElectronics
+									</p>
+								</div>
+							</div>
+							<div class="container d-flex justify-content-center w-50 ps-5">
+								<p class="text-light fw-bold pt-4">
+									"Once I discovered Haqmal.com, I was amazed at how many
+									options I had with suppliers from all over the world."
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<button
+					class="carousel-control-prev rounded-2"
+					type="button"
+					data-bs-target="#carouselExampleIndicators"
+					data-bs-slide="prev"
+				>
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+				</button>
+				<button
+					class="carousel-control-next"
+					type="button"
+					data-bs-target="#carouselExampleIndicators"
+					data-bs-slide="next"
+				>
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+				</button>
+			</div>
+		</div>
+		<div class="container d-grid row-gap-4 p-4">
+			<h3 class="h3 mt-5">
+				Make your day with
+				<span class="text-success fw-bolder">Haqmal.com</span>
+			</h3>
+			<div class="row column-gap-2">
+				<div class="col card shadow border-2 rounded-1" style="width: 8rem">
+					<h3 class="h3 p-2 fs-6 fw-bold">Toys under $25</h3>
+					<img
+						src="img/card-photo-1.PNG"
+						class="card-img-top rounded-1"
+						alt="..."
+					/>
+					<div class="card-body">
+						<p class="card-text">
+							<a
+								href="#"
+								class="text-decoration-none fw-bold"
+								style="font-size: 16px"
+								>Shop now</a
+							>
+						</p>
+					</div>
+				</div>
+				<div class="col card shadow border-2 rounded-1" style="width: 8rem">
+					<h3 class="h3 p-2 fs-6 fw-bold">Deals in PCs</h3>
+					<img
+						src="img/card-photo-2.PNG"
+						class="card-img-top rounded-1"
+						alt="..."
+					/>
+					<div class="card-body">
+						<p class="card-text">
+							<a
+								href="#"
+								class="text-decoration-none fw-bold"
+								style="font-size: 16px"
+								>Shop now</a
+							>
+						</p>
+					</div>
+				</div>
+				<div class="col card shadow border-2 rounded-1" style="width: 8rem">
+					<h3 class="h3 p-2 fs-6 fw-bold">Refresh your space</h3>
+					<img src="img/pro--6.PNG" class="card-img-top rounded-1" alt="..." />
+					<div class="card-body">
+						<p class="card-text">
+							<a
+								href="#"
+								class="text-decoration-none fw-bold"
+								style="font-size: 16px"
+								>Shop now</a
+							>
+						</p>
+					</div>
+				</div>
+				<div class="col card shadow border-2 rounded-1" style="width: 8rem">
+					<h3 class="h3 p-2 fs-6 fw-bold">Shop deals in Fashion</h3>
+					<img src="img/pro--5.PNG" class="card-img-top rounded-1" alt="..." />
+					<div class="card-body">
+						<p class="card-text">
+							<a
+								href="#"
+								class="text-decoration-none fw-bold"
+								style="font-size: 16px"
+								>Shop now</a
+							>
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="row column-gap-2">
+				<div class="col card shadow border-2 rounded-1" style="width: 8rem">
+					<h3 class="h3 p-2 fs-6 fw-bold">Beauty steals under $25</h3>
+					<img src="img/pro--4.PNG" class="card-img-top rounded-1" alt="..." />
+					<div class="card-body">
+						<p class="card-text">
+							<a
+								href="#"
+								class="text-decoration-none fw-bold"
+								style="font-size: 16px"
+								>Shop now</a
+							>
+						</p>
+					</div>
+				</div>
+				<div class="col card shadow border-2 rounded-1" style="width: 8rem">
+					<h3 class="h3 p-2 fs-6 fw-bold">Fashion trends you like</h3>
+					<img src="img/pro--3.PNG" class="card-img-top rounded-1" alt="..." />
+					<div class="card-body">
+						<p class="card-text">
+							<a
+								href="#"
+								class="text-decoration-none fw-bold"
+								style="font-size: 16px"
+								>Shop now</a
+							>
+						</p>
+					</div>
+				</div>
+				<div class="col card shadow border-2 rounded-1" style="width: 8rem">
+					<h3 class="h3 p-2 fs-6 fw-bold">New year, now you</h3>
+					<img src="img/pro--2.PNG" class="card-img-top rounded-1" alt="..." />
+					<div class="card-body">
+						<p class="card-text">
+							<a
+								href="#"
+								class="text-decoration-none fw-bold"
+								style="font-size: 16px"
+								>Shop now</a
+							>
+						</p>
+					</div>
+				</div>
+				<div class="col card shadow border-2 rounded-1" style="width: 8rem">
+					<h3 class="h3 p-2 fs-6 fw-bold">Player's paradise starts here</h3>
+					<img src="img/pro--1.PNG" class="card-img-top rounded-1" alt="..." />
+					<div class="card-body">
+						<p class="card-text">
+							<a
+								href="#"
+								class="text-decoration-none fw-bold"
+								style="font-size: 16px"
+								>Shop now</a
+							>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="container-fluid d-flex bg-success">
+			<section class="d-flex column-gap-5" style="margin: 60px auto">
+				<div class="container d-flex flex-column row-gap-3 pe-5 ps-5 fw-light">
+					<h5 class="text-light fw-bold fs-6">Let's us help you</h5>
+					<a
+						class="text-light text-decoration-none"
+						href="#"
+						style="font-size: 16px"
+						>Your account</a
+					>
+					<a
+						class="text-light text-decoration-none"
+						href="#"
+						style="font-size: 16px"
+						>Your purchases</a
+					>
+					<a
+						class="text-light text-decoration-none"
+						href="#"
+						style="font-size: 16px"
+						>Your Shipping policies and rates</a
+					>
+					<a
+						class="text-light text-decoration-none"
+						href="#"
+						style="font-size: 16px"
+						>Return and exchange requests</a
+					>
+					<a
+						class="text-light text-decoration-none"
+						href="#"
+						style="font-size: 16px"
+						>Manage your content and devices</a
+					>
+					<a
+						class="text-light text-decoration-none"
+						href="#"
+						style="font-size: 16px"
+						>Haqmal.com Assistant</a
+					>
+					<a
+						class="text-light text-decoration-none"
+						href="#"
+						style="font-size: 16px"
+						>Help</a
+					>
+				</div>
+				<div class="container d-flex flex-column row-gap-3 pe-5 ps-5 fw-light">
+					<h5 class="text-light fw-bold fs-6">Pay for Haqmal.com products</h5>
+					<a
+						class="text-light text-decoration-none"
+						href="#"
+						style="font-size: 16px"
+						>Shop using points</a
+					>
+					<a
+						class="text-light text-decoration-none"
+						href="#"
+						style="font-size: 16px"
+						>Reload your balance</a
+					>
+					<a
+						class="text-light text-decoration-none"
+						href="#"
+						style="font-size: 16px"
+						>Haqmal.com currency converter</a
+					>
+				</div>
+				<div class="container d-flex flex-column row-gap-3 fw-light pe-5 ps-5">
+					<h5 class="text-light fw-bold fs-6">Partner with us</h5>
+					<a
+						class="text-light text-decoration-none"
+						href="#"
+						style="font-size: 16px"
+						>Selling on Haqmal.com</a
+					>
+					<a
+						class="text-light text-decoration-none"
+						href="#"
+						style="font-size: 16px"
+						>Sell your apps on Haqmal.com</a
+					>
+					<a
+						class="text-light text-decoration-none"
+						href="#"
+						style="font-size: 16px"
+						>Haqmal.com Partners</a
+					>
+					<a
+						class="text-light text-decoration-none"
+						href="#"
+						style="font-size: 16px"
+						>Advertise your products</a
+					>
+					<a
+						class="text-light text-decoration-none"
+						href="#"
+						style="font-size: 16px"
+						>Market yourself with us</a
+					>
+				</div>
+				<div class="container d-flex flex-column row-gap-3 fw-light">
+					<h5 class="text-light fw-bold fs-6">Learn more about us</h5>
+					<a
+						class="text-light text-decoration-none"
+						href="#"
+						style="font-size: 16px"
+						>Careers</a
+					>
+					<a
+						class="text-light text-decoration-none"
+						href="#"
+						style="font-size: 16px"
+						>Blog</a
+					>
+					<a
+						class="text-light text-decoration-none"
+						href="#"
+						style="font-size: 16px"
+						>Information about Haqmal.com</a
+					>
+					<a
+						class="text-light text-decoration-none"
+						href="#"
+						style="font-size: 16px"
+						>Investor relations</a
+					>
+					<a
+						class="text-light text-decoration-none"
+						href="#"
+						style="font-size: 16px"
+						>Haqmal.com devices</a
+					>
+				</div>
+			</section>
+		</footer>
+		<button
+			id="scrollToTop"
+			onclick="scrollToTop()"
+			class="border border-2 border-light bg-success"
+		>
+			↑
+		</button>
+		<script src="javascript/code.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+	</body>
+</html>

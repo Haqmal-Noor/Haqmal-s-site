@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="../css/main.css" />
+		<link rel="stylesheet" href="../css/responsive.css" />
+		<link
+			href="../node_modules/bootstrap/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+		/>
+
+		<title>Haqmal store</title>
+	</head>
+	<body>
+		<div class="first-view container-fluid">
+			<div class="header p-2">
+				<header class="d-flex justify-content-between" id="mainHeader">
+					<a href="#">
+						<img
+							class="logo mt-2"
+							alt="Haqmal Store logo"
+							src="../icons/Big-Project-logo.png"
+							width="180px"
+						/>
+					</a>
+					<div class="input-group mt-2" style="width: 700px">
+						<input
+							type="search"
+							class="form-control shadow border-2 border-success"
+							placeholder="What are you looking for..."
+							aria-label="Recipient's username"
+							aria-describedby="button-addon2"
+							style="font-size: 14px"
+						/>
+						<button
+							class="btn btn-sm btn-success ps-3 pe-3"
+							type="button"
+							id="button-addon2"
+						>
+							Search
+						</button>
+					</div>
+					<div class="mt-2">
+						<a
+							href="#"
+							class="me-5 text-decoration-none fw-bold text-black"
+							style="font-size: 16px"
+						>
+							<span class="shouldChange">
+								Ship to:
+								<img
+									src="../img/countries/ae.png"
+									alt="UAE"
+									style="width: 30px"
+								/>
+								AE</span
+							>
+						</a>
+						<span
+							href="#"
+							class="me-5 text-decoration-none fw-bold text-black"
+							style="font-size: 16px"
+						>
+							<span class="shouldChange pb-4" id="trigger" style="cursor: pointer;"
+								>English-USD
+								<img
+									class="globe-icon"
+									src="../icons/Globe-black.png"
+									alt="globe-icon"
+									style="width: 55px; margin: -4px 0px 0px -15px; padding: 0"
+							/></span>
+							<div id="popup">
+								<div class="d-flex flex-column p-2">
+									<h5>Set language and currency</h5>
+									<p class="opacity-75">
+										Select your preferred language and currency.<br />You can
+										update the setting at any time.
+									</p>
+									<div>
+										<label for="languageOptions" class="opacity-75 mb-2"
+											>Language</label
+										>
+										<select
+											class="form-select"
+											aria-label="Default select example"
+											id="languageOptions"
+											style="font-size: 12px"
+										>
+											<option selected>Open this select menu</option>
+											<option value="1">One</option>
+											<option value="2">Two</option>
+											<option value="3">Three</option>
+										</select>
+
+										<!-- <label for="currencyOptions" class="opacity-75 mb-2 mt-4"
+											>Currency</label
+										>
+										<select
+											class="form-select"
+											aria-label="Default select example"
+											id="languageOptions"
+											style="font-size: 12px"
+										>
+											<option selected>Open this select menu</option>
+											<option value="1">One</option>
+											<option value="2">Two</option>
+											<option value="3">Three</option>
+										</select> -->
+									</div>
+								</div>
+							</div>
+						</span>
+						<div class="container d-inline">
+							<img src="../img/haqmal.jpg" alt="User Photo" style="width: 44px; border-radius: 100%;">
+						</div>
+						<!-- <a href="login.html">
+							<button
+								type="button"
+								class="login-button btn btn-sm btn-outline-light pe-2 ps-2"
+							>
+								Login
+							</button></a
+						>
+						<a href="signup.html"
+							><button class="btn btn-sm btn-success me-3 ms-2">
+								Sign up
+							</button></a
+						> -->
+					</div>
+				</header>
+				<div class="d-flex justify-content-between mt-2">
+					<nav class="main-nav">
+						<ul class="main-nav-list">
+							<li>
+								<a
+									class="btn btn-sm"
+									data-bs-toggle="offcanvas"
+									href="#offcanvasExample"
+									role="button"
+									aria-controls="offcanvasExample"
+								>
+									Categories
+								</a>
+							</li>
+							<li>
+								<a
+									class="btn btn-sm"
+									data-bs-toggle="offcanvas"
+									href="#offcanvasExample"
+									role="button"
+									aria-controls="offcanvasExample"
+									>Sell on Haqmal.com</a
+								>
+							</li>
+							<li>
+								<a class="main-nav-link" href="">Testimonials</a>
+							</li>
+							<li>
+								<a class="main-nav-link" href="">Pricing</a>
+							</li>
+						</ul>
+					</nav>
+					<nav class="d-flex justify-content-center pe-4">
+						<ul class="main-nav-list">
+							<li>
+								<a class="main-nav-link" href="">Buyer Central</a>
+							</li>
+							<li>
+								<a class="main-nav-link" href="">Help Center</a>
+							</li>
+							<li>
+								<a class="main-nav-link" href="">Get th App</a>
+							</li>
+							<li>
+								<a class="main-nav-link" href="">Become a supplier</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+
+			<div class="page-intro">
+				<div class="mb-3 w-25" style="cursor: pointer">
+					<img
+						src="../icons/MediaPlayerAppList.scale-200_contrast-black.png"
+						alt="playing"
+						width="25px"
+					/>
+					<span class="text-light fw-bolder fs-6"
+						>Learn about
+						<span style="font-size: 18px; color: rgb(47, 255, 95)"
+							>Haqmal.com</span
+						></span
+					>
+				</div>
+				<div class="page-title">
+					<h1 class="h1 w-50 mb-5 text-light fw-bolder">
+						The leading B2B ecommerce platform for global trade
+					</h1>
+				</div>
+				<div class="input-group w-75">
+					<input
+						type="search"
+						class="form-control"
+						placeholder="What are you looking for..."
+						aria-label="Recipient's username"
+						aria-describedby="button-addon2"
+						style="font-size: 16px"
+					/>
+					<button class="btn btn-sm btn-success" type="button">Search</button>
+				</div>
+			</div>
+		</div>
+		<div class="everything">
+			<article
+				class="offcanvas offcanvas-start"
+				tabindex="-1"
+				id="offcanvasExample"
+				aria-labelledby="offcanvasExampleLabel"
+			>
+				<button
+					type="button"
+					class="btn-close text-reset position-absolute end-0 me-3"
+					data-bs-dismiss="offcanvas"
+					aria-label="Close"
+				></button>
+				<div class="categories">
+					<p>
+						Categories
+						<span id="toggleCategories" class="dropdown-icon">▼</span>
+					</p>
+					<ul class="category-list">
+						<li><a href="">Other Healthcare Supply</a></li>
+						<li><a href="">Earbud & In-Ear…</a></li>
+						<li><a href="">Earphones & Headphones</a></li>
+						<li><a href="">Used Mobile Phones</a></li>
+						<li><a href="">Over-Ear Headphones</a></li>
+						<li><a href="">Earphones</a></li>
+						<li><a href="">Gaming On-Ear & Over-Ear…</a></li>
+					</ul>
+				</div>
+				<hr />
+				<div class="supplier-types"><p>Supplier types</p></div>
+				<div class="min-order"><p>Min. order</p></div>
+				<div class="supplier-country">
+					<p>Supplier country/region</p>
+					<span id="toggleSupplierCountry" class="dropdown-icon">▼</span>
+					<input
+						type="text"
+						placeholder="search country"
+						class="country-input"
+					/>
+				</div>
+				<p>
+					New Products Muscle Joint Pain Relief Patch Perforated Adhesive Tiger
+					Capsicum…
+				</p>
+				<p>$1.24-$2.16</p>
+				<p>Henan Kangdi Medical Devices C…</p>
+				<p>
+					New Products Muscle Joint Pain Relief Patch Perforated Adhesive Tiger
+					Capsicum…
+				</p>
+				<p>$1.24-$2.16</p>
+				<p>Henan Kangdi Medical Devices C…</p>
+				<p>
+					New Products Muscle Joint Pain Relief Patch Perforated Adhesive Tiger
+					Capsicum…
+				</p>
+				<p>$1.24-$2.16</p>
+				<p>Henan Kangdi Medical Devices C…</p>
+				<p>
+					New Products Muscle Joint Pain Relief Patch Perforated Adhesive Tiger
+					Capsicum…
+				</p>
+				<p>$1.24-$2.16</p>
+				<p>Henan Kangdi Medical Devices C…</p>
+				<p>
+					New Products Muscle Joint Pain Relief Patch Perforated Adhesive Tiger
+					Capsicum…
+				</p>
+				<p>$1.24-$2.16</p>
+				<p>Henan Kangdi Medical Devices C…</p>
+				<hr />
+			</article>
+		</div>
+
+		<footer class="container-fluid d-flex bg-success">
+			<section class="d-flex column-gap-5" style="margin: 60px auto">
+				<div class="container d-flex flex-column row-gap-3 pe-5 ps-5 fw-light">
+					<h5 class="text-light fw-bold fs-6">Let's us help you</h5>
+					<a
+						class="text-light text-decoration-none"
+						href="#"
+						style="font-size: 16px"
+						>Your account</a
+					>
+					<a
+						class="text-light text-decoration-none"
+						href="#"
+						style="font-size: 16px"
+						>Your purchases</a
+					>
+					<a
+						class="text-light text-decoration-none"
+						href="#"
+						style="font-size: 16px"
+						>Your Shipping policies and rates</a
+					>
+					<a
+						class="text-light text-decoration-none"
+						href="#"
+						style="font-size: 16px"
+						>Return and exchange requests</a
+					>
+					<a
+						class="text-light text-decoration-none"
+						href="#"
+						style="font-size: 16px"
+						>Manage your content and devices</a
+					>
+					<a
+						class="text-light text-decoration-none"
+						href="#"
+						style="font-size: 16px"
+						>Haqmal.com Assistant</a
+					>
+					<a
+						class="text-light text-decoration-none"
+						href="#"
+						style="font-size: 16px"
+						>Help</a
+					>
+				</div>
+				<div class="container d-flex flex-column row-gap-3 pe-5 ps-5 fw-light">
+					<h5 class="text-light fw-bold fs-6">Pay for Haqmal.com products</h5>
+					<a
+						class="text-light text-decoration-none"
+						href="#"
+						style="font-size: 16px"
+						>Shop using points</a
+					>
+					<a
+						class="text-light text-decoration-none"
+						href="#"
+						style="font-size: 16px"
+						>Reload your balance</a
+					>
+					<a
+						class="text-light text-decoration-none"
+						href="#"
+						style="font-size: 16px"
+						>Haqmal.com currency converter</a
+					>
+				</div>
+				<div class="container d-flex flex-column row-gap-3 fw-light pe-5 ps-5">
+					<h5 class="text-light fw-bold fs-6">Partner with us</h5>
+					<a
+						class="text-light text-decoration-none"
+						href="#"
+						style="font-size: 16px"
+						>Selling on Haqmal.com</a
+					>
+					<a
+						class="text-light text-decoration-none"
+						href="#"
+						style="font-size: 16px"
+						>Sell your apps on Haqmal.com</a
+					>
+					<a
+						class="text-light text-decoration-none"
+						href="#"
+						style="font-size: 16px"
+						>Haqmal.com Partners</a
+					>
+					<a
+						class="text-light text-decoration-none"
+						href="#"
+						style="font-size: 16px"
+						>Advertise your products</a
+					>
+					<a
+						class="text-light text-decoration-none"
+						href="#"
+						style="font-size: 16px"
+						>Market yourself with us</a
+					>
+				</div>
+				<div class="container d-flex flex-column row-gap-3 fw-light">
+					<h5 class="text-light fw-bold fs-6">Learn more about us</h5>
+					<a
+						class="text-light text-decoration-none"
+						href="#"
+						style="font-size: 16px"
+						>Careers</a
+					>
+					<a
+						class="text-light text-decoration-none"
+						href="#"
+						style="font-size: 16px"
+						>Blog</a
+					>
+					<a
+						class="text-light text-decoration-none"
+						href="#"
+						style="font-size: 16px"
+						>Information about Haqmal.com</a
+					>
+					<a
+						class="text-light text-decoration-none"
+						href="#"
+						style="font-size: 16px"
+						>Investor relations</a
+					>
+					<a
+						class="text-light text-decoration-none"
+						href="#"
+						style="font-size: 16px"
+						>Haqmal.com devices</a
+					>
+				</div>
+			</section>
+		</footer>
+		<button
+			id="scrollToTop"
+			onclick="scrollToTop()"
+			class="border border-2 border-light bg-success"
+		>
+			↑
+		</button>
+		<script src="../javascript/main.js"></script>
+		<script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+	</body>
+</html>
